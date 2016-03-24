@@ -1,6 +1,8 @@
 
 # [ThunderFlurry](http://github.com/thunderflurry/thunderflurry) ![Github version](https://img.shields.io/github/release/thunderflurry/thunderflurry.svg?label=Current%20Version)
 
+[![Join the chat at https://gitter.im/ThunderFlurry/thunderflurry](https://badges.gitter.im/ThunderFlurry/thunderflurry.svg)](https://gitter.im/ThunderFlurry/thunderflurry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ThunderFlurry is a nodejs based web server providing management of motion picture productions. It is currently under development and has not been released.
 
 ### Collaborate With Us
