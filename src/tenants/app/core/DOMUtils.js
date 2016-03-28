@@ -13,16 +13,18 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+export function addEventListener(node, event, listener) {
+  if (node.addEventListener) {
+    node.addEventListener(event, listener, false);
+  } else {
+    node.attachEvent(`on${event}`, listener);
+  }
+}
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
-
-export const analytics = {
-
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
-
-};
-
+export function removeEventListener(node, event, listener) {
+  if (node.removeEventListener) {
+    node.removeEventListener(event, listener, false);
+  } else {
+    node.detachEvent(`on${event}`, listener);
+  }
+}

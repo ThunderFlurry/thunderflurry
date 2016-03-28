@@ -11,7 +11,7 @@ import webpack from 'webpack';
 import webpackConfig from './webpack.config';
 
 /**
- * Creates application bundles from the source files.
+ * Creates app bundles from the source files.
  */
 function bundle() {
   return new Promise((resolve, reject) => {

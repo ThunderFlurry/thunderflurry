@@ -1,0 +1,265 @@
+/**
+ *	ThunderFlurry (https://thunderflurry.github.io/)
+ *
+ * Copyright © 2015 - 2016 Cinecove Digital, LLC. All rights reserved
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+ * except in compliance with the License. You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+ * either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ */
+
+@import '../../../../../node_modules/normalize.css/normalize.css';
+
+/*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/*
+ * Base styles
+ * ========================================================================== */
+
+html {
+  color: #222;
+  font-weight: 100;
+  font-size: 1em; /* ~16px; */
+  font-family: $font-family-base;
+  line-height: 1.375; /* ~22px */
+}
+
+a {
+  color: #0074c2;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Browser upgrade prompt
+ * ========================================================================== */
+
+:global(.browserupgrade) {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*
+ * Print styles
+ * Inlined to avoid the additional HTTP request:
+ * http://www.phpied.com/delay-loading-your-print-css/
+ * ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+  }
+
+  abbr[title]::after {
+    content: ' (' attr(title) ')';
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+
+  a[href^='#']::after,
+  a[href^='javascript:']::after {
+    content: '';
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+html, body {
+  height: 100%;
+}
+
+  .splash-begin {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(146, 58, 191);
+    background: -webkit-linear-gradient(290deg, rgb(146, 58, 191) 0%, rgb(26, 122, 188) 100%) rgb(93, 197, 239);
+    background:    -moz-linear-gradient(290deg, rgb(146, 58, 191) 0%, rgb(26, 122, 188) 100%) rgb(93, 197, 239);
+    background:      -o-linear-gradient(290deg, rgb(146, 58, 191) 0%, rgb(26, 122, 188) 100%) rgb(93, 197, 239);
+    background:     -ms-linear-gradient(290deg, rgb(146, 58, 191) 0%, rgb(26, 122, 188) 100%) rgb(93, 197, 239);
+    background:         linear-gradient(160deg, rgb(146, 58, 191) 0%, rgb(26, 122, 188) 100%) rgb(93, 197, 239);
+  }
+
+  .version-label {
+    font-family: Lato;
+    text-align: center;
+    padding: 20px 0;
+    color: #fafafa;
+    color: rgba(250, 250, 250, .5);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+
+  .container {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto -62px;
+  }
+
+  .image-container {
+    background-image: url(/images/brand/logo.png);
+    height: 60%;
+    width: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin: 0 auto;
+    opacity: 0.4;
+  }
+
+  .image-caption {
+    font-family: Lato;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.56);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  @media only screen and (max-width: 580px) {
+    .image-caption {
+      padding: 0 20px;
+      font-size: 1.5em;
+    }
+    .image-container {
+      height: 50%;
+    }
+  }

@@ -13,16 +13,8 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import keyMirror from 'fbjs/lib/keyMirror';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+export default keyMirror({
 
-export const analytics = {
-
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
-
-};
-
+});

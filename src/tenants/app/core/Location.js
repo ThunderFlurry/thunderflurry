@@ -13,16 +13,10 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import createHistory from 'history/lib/createBrowserHistory';
+import createMemoryHistory from 'history/lib/createMemoryHistory';
+import useQueries from 'history/lib/useQueries';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+const location = useQueries(process.env.BROWSER ? createHistory : createMemoryHistory)();
 
-export const analytics = {
-
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
-
-};
-
+export default location;

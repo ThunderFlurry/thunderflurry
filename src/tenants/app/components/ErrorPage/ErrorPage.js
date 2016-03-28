@@ -13,16 +13,32 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import React, { Component, PropTypes } from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './ErrorPage.scss';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+const title = 'Error';
 
-export const analytics = {
+class ErrorPage extends Component {
 
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
+  static contextTypes = {
+    onSetTitle: PropTypes.func.isRequired,
+    onPageNotFound: PropTypes.func.isRequired,
+  };
 
-};
+  componentWillMount() {
+    this.context.onSetTitle(title);
+  }
 
+  render() {
+    return (
+      <div>
+        <h1>{title}</h1>
+        <p>Sorry, an critical error occurred on this page.</p>
+      </div>
+    );
+  }
+
+}
+
+export default withStyles(ErrorPage, s);

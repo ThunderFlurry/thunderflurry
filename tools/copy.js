@@ -11,6 +11,7 @@ import path from 'path';
 import gaze from 'gaze';
 import replace from 'replace';
 import Promise from 'bluebird';
+import mkdirp from 'mkdirp';
 
 /**
  * Copies static files such as robots.txt, favicon.ico to the
@@ -19,9 +20,17 @@ import Promise from 'bluebird';
 async function copy({ watch } = {}) {
   const ncp = Promise.promisify(require('ncp'));
 
+	mkdirp('build/public', function (err) {
+		if (err) console.error(err);
+	});
+
+	mkdirp('build/content', function (err) {
+		if (err) console.error(err);
+	});
+
   await Promise.all([
-    ncp('src/public', 'build/public'),
-    ncp('src/content', 'build/content'),
+    ncp('src/tenants/app/public', 'build/public/app'),
+    ncp('src/tenants/app/content', 'build/content/app'),
     ncp('package.json', 'build/package.json'),
   ]);
 
@@ -35,11 +44,11 @@ async function copy({ watch } = {}) {
 
   if (watch) {
     const watcher = await new Promise((resolve, reject) => {
-      gaze('src/content/**/*.*', (err, val) => err ? reject(err) : resolve(val));
+      gaze('src/tenants/app/content/**/*.*', (err, val) => err ? reject(err) : resolve(val));
     });
     watcher.on('changed', async (file) => {
-      const relPath = file.substr(path.join(__dirname, '../src/content/').length);
-      await ncp(`src/content/${relPath}`, `build/content/${relPath}`);
+      const relPath = file.substr(path.join(__dirname, '../src/tenants/app/content/').length);
+      await ncp(`src/tenants/app/content/${relPath}`, `build/content/app/${relPath}`);
     });
   }
 }

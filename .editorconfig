@@ -12,7 +12,12 @@ insert_final_newline = true
 
 # Tabs in JS unless otherwise specified
 [**.js]
-indent_style = tab
+indent_style = space
+indent_size = 4
+
+[**.jsx]
+indent_style = space
+indent_size = 4
 
 [test/**.xml]
 indent_style = tab

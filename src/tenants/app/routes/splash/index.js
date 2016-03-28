@@ -13,16 +13,12 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import React from 'react';
+import Splash from './Splash';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
-
-export const analytics = {
-
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
-
-};
-
+export const path = '/';
+export const action = async (state) => {
+	const title = 'ThunderFlurry';
+	state.context.onSetTitle(title);
+	return <Splash title={title} />;
+}

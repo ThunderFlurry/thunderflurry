@@ -13,16 +13,33 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import React, { Component, PropTypes } from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './NotFoundPage.scss';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+const title = 'Page Not Found';
 
-export const analytics = {
+class NotFoundPage extends Component {
 
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
+  static contextTypes = {
+    onSetTitle: PropTypes.func.isRequired,
+    onPageNotFound: PropTypes.func.isRequired,
+  };
 
-};
+  componentWillMount() {
+    this.context.onSetTitle(title);
+    this.context.onPageNotFound();
+  }
 
+  render() {
+    return (
+      <div>
+        <h1>{title}</h1>
+        <p>Sorry, but the page you were trying to view does not exist.</p>
+      </div>
+    );
+  }
+
+}
+
+export default withStyles(NotFoundPage, s);

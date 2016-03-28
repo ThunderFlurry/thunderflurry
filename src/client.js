@@ -2,17 +2,23 @@
  *	ThunderFlurry (https://thunderflurry.github.io/)
  *
  * Copyright © 2015 - 2016 Cinecove Digital, LLC. All rights reserved
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file 
+ * except in compliance with the License. You may obtain a copy of the License at
  *
- * This source code is licensed under the BSD-3 license found in the
- * LICENSE.md file in the root directory of this source tree.
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under the 
+ * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+ * either express or implied. See the License for the specific language governing permissions 
+ * and limitations under the License.
  */
 
 import 'babel-polyfill';
 import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
-import Router from './routes';
-import Location from './core/Location';
-import { addEventListener, removeEventListener } from './core/DOMUtils';
+import Router from 'tenants/app/routes';
+import Location from 'tenants/app/core/Location';
+import { addEventListener, removeEventListener } from 'tenants/app/core/DOMUtils';
 
 let cssContainer = document.getElementById('css');
 const appContainer = document.getElementById('app');
@@ -105,7 +111,7 @@ function run() {
   });
 }
 
-// Run the application when both DOM is ready and page content is loaded
+// Run the app when both DOM is ready and page content is loaded
 if (['complete', 'loaded', 'interactive'].includes(document.readyState) && document.body) {
   run();
 } else {

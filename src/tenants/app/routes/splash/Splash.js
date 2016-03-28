@@ -13,16 +13,21 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import React, { PropTypes } from 'react';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import s from './Splash.scss';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+function Splash({title}) {
+	return (
+		<div className={s.root}>
+			<div className={s.container}>
+				<h1>{title}</h1>
+				<p>...</p>
+			</div>
+		</div>
+	);
+}
 
-export const analytics = {
+Splash.propTypes = { title: PropTypes.string.isRequired };
 
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
-
-};
-
+export default withStyles(Splash, s);

@@ -38,7 +38,7 @@ const config = {
   context: path.resolve(__dirname, '../src'),
 
   output: {
-    path: path.resolve(__dirname, '../build/public/scripts/app/'),
+    path: path.resolve(__dirname, '../build/public/app/scripts/app'),
     publicPath: '/scripts/app/',
     sourcePrefix: '  ',
   },
@@ -155,6 +155,8 @@ const clientConfig = extend(true, {}, config, {
   output: {
     filename: DEBUG ? '[name].js?[chunkhash]' : '[name].[chunkhash].js',
     chunkFilename: DEBUG ? '[name].[id].js?[chunkhash]' : '[name].[id].[chunkhash].js',
+  	path: path.resolve(__dirname, '../build/public/app/scripts/app'), 
+	  publicPath: '/scripts/app/'
   },
 
   target: 'web',
@@ -212,8 +214,9 @@ const serverConfig = extend(true, {}, config, {
   entry: './server.js',
 
   output: {
-    filename: '../../../server.js',
-    libraryTarget: 'commonjs2',
+    filename: 'server.js',
+	  path: path.resolve(__dirname, '../build'),
+	  libraryTarget: 'commonjs2',
   },
 
   target: 'node',

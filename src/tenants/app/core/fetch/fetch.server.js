@@ -13,16 +13,27 @@
  * and limitations under the License.
  */
 
-/* eslint-disable max-len */
-/* jscs:disable maximumLineLength */
+import Promise from 'bluebird';
+import fetch, { Request, Headers, Response } from 'node-fetch';
+import { host } from '../../../../config';
 
-export const port = process.env.PORT || 3000;
-export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
+fetch.Promise = Promise;
+Response.Promise = Promise;
 
-export const analytics = {
+function localUrl(url) {
+  if (url.startsWith('//')) {
+    return `https:${url}`;
+  }
 
-  // https://analytics.google.com/
-  google: { trackingId: process.env.GOOGLE_TRACKING_ID || 'UA-75301203-1' },
+  if (url.startsWith('http')) {
+    return url;
+  }
 
-};
+  return `http://${host}${url}`;
+}
 
+function localFetch(url, options) {
+  return fetch(localUrl(url), options);
+}
+
+export { localFetch as default, Request, Headers, Response };

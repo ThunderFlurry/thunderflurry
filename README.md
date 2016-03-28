@@ -8,24 +8,30 @@ ThunderFlurry is a nodejs based web server providing management of motion pictur
 We use Slack for communications. Your input on this project is extremely valuable to us, so please join the conversation today!
 
 [![Slack Invites](https://img.shields.io/badge/%23Slack-Collaborate%20With%20Us-blue.svg)](https://thunderflurry.signup.team/)
+[![Join the chat at https://gitter.im/ThunderFlurry/thunderflurry](https://badges.gitter.im/ThunderFlurry/thunderflurry.svg)](https://gitter.im/ThunderFlurry/thunderflurry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ### Browser Support
 
 We support most browsers, which is the point of using our module in the first place :-)
 
-* Internet Explorer 8+
+* Internet Explorer 9+
 * Edge
 * Firefox 0.8+
 * Chrome 1+
 * Safari 3+
 * Opera 8+ (including Opera Next)
 
-This information may change before v0.4. Internet Explorer will most likely be bumped to version 9. TBD.
 
 ### Building the code
 
 #### Required Tools
-- Node (tested on 4.4, and 5.8; on Windows, Mac OS, and Debian)
+- Node
+    - Development requires Node 5.0+
+    - Building is tested with Node 5.8 on Windows, Mac OS, and Ubuntu
+    - Compiled Server requires Node 4.2+ or 5.0+
+    - Compiled Server is tested with:
+        - Node 4.4/5.8 on Windows, Mac OS, Ubuntu
+        - Node 4.2 on Amazon EBS with a EC2 micro installation
 - NPM (prefer 2+)
 - Grunt
 
@@ -71,8 +77,7 @@ $ npm run
 
 ### License
 
-ThunderFlurry is licensed under the [BSD-3 license](./LICENSE.md)
-
+ThunderFlurry is licensed under the [Apache 2.0 license](./LICENSE.md). Copyright and related rights for sample code as defined in the project's LICENSE.md file are waived via [CC0](https://tldrlegal.com/l/cc0-1.0).
 
 ### Project Dashboard [![Build Status](https://travis-ci.org/ThunderFlurry/thunderflurry.svg)](https://travis-ci.org/ThunderFlurry/thunderflurry) [![Build status](https://ci.appveyor.com/api/projects/status/1qntrvsgmtls9sc8?svg=true)](https://ci.appveyor.com/project/victoriafrench/thunderflurry)
 
@@ -172,7 +177,7 @@ $ git push origin master
 
 | Contributor | Details |
 | ------- | ---------------------------|
-|@victoriafrench|  Program Manager on ThunderFlurry and original developer/creator. |
+|[![photo](https://avatars3.githubusercontent.com/u/763805?v=3&s=24) @victoriafrench](https://github.com/victoriafrench)|  Program Manager on ThunderFlurry and original developer/creator. |
 
 ### Special Thanks
 
@@ -180,28 +185,28 @@ We would like to give a shout-out to **JetBrains** for providing [WebStorm](http
 
 [BrowserStack](http://browserstack.com) had provided us with a valuable testing account for this project. We greatly appreciate their support and hope you check them out!
 
+[![WebStorm](https://thunderflurry.github.io/images/sponsors/webstorm.png)](https://twitter.com/WebStormIDE)
+[![BrowserStack](https://thunderflurry.github.io/images/sponsors/browserstack.png)](https://twitter.com/browserstack)
+
 ### Platinum Sponsors
 
-| Twitter Handle | Sponsor Name |
-| ------- | ---------------------------|
-|@cinecove|  Cinecove |
+[![Cinecove](https://thunderflurry.github.io/images/sponsors/cinecove.png)](https://twitter.com/cinecove)
 
 ### Gold Sponsors
 
-| Twitter Handle | Sponsor Name |
-| ------- | ---------------------------|
+[![Devil Bunny Productions](https://thunderflurry.github.io/images/sponsors/devilbunnyproductions.png)](https://twitter.com/devilbunnyfilms)
+[![White Mouse Productions](https://thunderflurry.github.io/images/sponsors/whitemousepictures.jpeg)](https://twitter.com/whitemousefilms)
 
 
 ### Bronze Sponsors
 
-| Twitter Handle | Sponsor Name |
-| ------- | ---------------------------|
+[![Rabid Rabbit Entertainment](https://thunderflurry.github.io/images/sponsors/rabidrabbit.jpg)](https://www.facebook.com/RabidRabbitEntertainment/)
 
 
 ### Silver Sponsors
 
-| Twitter Handle | Sponsor Name |
-| ------- | ---------------------------|
+[![Fluffy D. Bunny](https://thunderflurry.github.io/images/sponsors/fluffydbunny.png)](https://twitter.com/fluffydbunny)
+[![Bill McCarthy](https://thunderflurry.github.io/images/sponsors/billmccarthy.png)](https://twitter.com/Dig_Bill)
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-75301203-2/thunderflurry/readme.md)](https://github.com/igrigorik/ga-beacon)
