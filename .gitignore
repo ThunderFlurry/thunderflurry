@@ -16,4 +16,16 @@ node_modules
 .DS_Store
 .sizecache.json
 bower_components
-npm-debug.log
+npm-debug.log*
+.npm
+.node_repl_history
+.lock-wscript
+.grunt
+coverage
+lib-cov
+pids
+*.pid
+*.seed
+logs
+*.log
+

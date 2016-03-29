@@ -2,7 +2,7 @@
   "name": "thunderflurry",
   "title": "ThunderFlurry",
   "description": "Web project management for motion picture productions.",
-  "version": "0.0.4-pre",
+  "version": "0.0.5-pre",
   "main": "server.js",
   "homepage": "https://github.com/thunderflurry/thunderflurry",
   "author": {
@@ -72,7 +72,7 @@
     "react-dom": "0.14.7",
     "react-routing": "0.0.7",
     "source-map-support": "0.4.0",
-    "vhost": "^3.0.2",
+    "thunderflurry-virtualhost": "^0.1.2",
     "whatwg-fetch": "0.11.0"
   },
   "devDependencies": {

@@ -12,5 +12,6 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    Modernizr
+    Node, Javascript, Express
+    React, Pug
 

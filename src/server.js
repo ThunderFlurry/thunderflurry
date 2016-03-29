@@ -26,10 +26,11 @@ import assets from './assets';
 import { port, analytics } from './config';
 import chalk from 'chalk';
 import pkg from '../package.json';
+import virtualhost from 'thunderflurry-virtualhost';
 //import tenant from './tenant';
 
 const server = global.server = express();
-
+const vhost = global.vhost = virtualhost(express);
 
 
 //
@@ -43,19 +44,17 @@ global.navigator.userAgent = global.navigator.userAgent || 'all';
 // Register Node.js middleware
 // -----------------------------------------------------------------------------
 
-//server.use(tenant('www', express.static(path.join(__dirname, 'public/app'))));
-server.use(express.static(path.join(__dirname, 'public/app')));
-console.log(__dirname);
-
-
-server.use(cookieParser());
-server.use(bodyParser.urlencoded({ extended: true }));
-server.use(bodyParser.json());
+const www = vhost(['~', /^www\.[a-z_0-9-]+\.[a-z]+/]);
+server.use(www);
+www.server.use(express.static(path.join(__dirname, 'public/app')));
+www.server.use(cookieParser());
+www.server.use(bodyParser.urlencoded({ extended: true }));
+www.server.use(bodyParser.json());
 
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-server.use('/graphql', expressGraphQL(req => ({
+www.server.use('/graphql', expressGraphQL(req => ({
   schema,
   graphiql: true,
   rootValue: { request: req },
@@ -65,7 +64,7 @@ server.use('/graphql', expressGraphQL(req => ({
 //
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
-server.get('*', async (req, res, next) => {
+www.server.get('*', async (req, res, next) => {
   try {
     let statusCode = 200;
     const template = require('./tenants/app/views/index.jade');
@@ -102,7 +101,7 @@ const pe = new PrettyError();
 pe.skipNodeFiles();
 pe.skipPackage('express');
 
-server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+www.server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   console.log(pe.render(err)); // eslint-disable-line no-console
   const template = require('./tenants/app/views/error.jade');
   const statusCode = err.status || 500;

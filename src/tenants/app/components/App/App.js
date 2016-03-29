@@ -62,7 +62,7 @@ class App extends Component {
 			<div className={s['splash-begin']}>
 				<div className={s.container}>
 					<div className={s['image-container']}></div>
-					<div className={s['image-caption']}>The code will be... "on the road." Yeah...</div>
+					<div className={s['image-caption']}>I wish I knew how to quit you.</div>
 				</div>
 				<div className={s['version-label']}>
 					<div><a href="https://thunderflurry.github.io/">ThunderFlurry</a> build <a href="https://github.com/thunderflurry/thunderflurry">v.{config.version}</a></div>
