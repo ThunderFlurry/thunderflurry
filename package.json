@@ -67,7 +67,7 @@
     "passport-facebook": "2.1.0",
     "pg": "4.5.3",
     "pretty-error": "2.0.0",
-    "react": "0.14.8",
+    "react": "15.0.1",
     "react-dom": "0.14.8",
     "react-routing": "0.0.7",
     "source-map-support": "0.4.0",
