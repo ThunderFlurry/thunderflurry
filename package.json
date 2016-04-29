@@ -72,7 +72,7 @@
     "react-routing": "0.0.7",
     "source-map-support": "0.4.0",
     "vhost": "^3.0.2",
-    "whatwg-fetch": "0.11.0"
+    "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",
