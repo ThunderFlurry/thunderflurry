@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.8.0",
-    "babel-runtime": "6.6.1",
+    "babel-runtime": "6.9.0",
     "bluebird": "3.3.5",
     "body-parser": "1.15.0",
     "classnames": "2.2.5",
