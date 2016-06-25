@@ -61,7 +61,7 @@
     "jade": "1.11.0",
     "jsonwebtoken": "6.2.0",
     "markdown-it": "6.0.1",
-    "node-fetch": "1.5.1",
+    "node-fetch": "1.5.3",
     "normalize.css": "4.1.1",
     "passport": "0.3.2",
     "passport-facebook": "2.1.0",
