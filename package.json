@@ -52,7 +52,7 @@
     "express-jwt": "3.3.0",
     "express-subdomain": "^1.0.5",
     "fastclick": "1.0.6",
-    "fbjs": "0.8.1",
+    "fbjs": "0.8.3",
     "front-matter": "2.0.7",
     "graphiql": "0.7.3",
     "graphql": "0.4.18",
