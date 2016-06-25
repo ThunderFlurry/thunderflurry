@@ -68,7 +68,7 @@
     "pg": "6.0.1",
     "pretty-error": "2.0.0",
     "react": "15.0.2",
-    "react-dom": "15.0.2",
+    "react-dom": "15.1.0",
     "react-routing": "0.0.7",
     "source-map-support": "0.4.0",
     "vhost": "^3.0.2",
