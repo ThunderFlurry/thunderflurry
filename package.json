@@ -67,7 +67,7 @@
     "passport-facebook": "2.1.1",
     "pg": "6.0.1",
     "pretty-error": "2.0.0",
-    "pug": "1.11.0",
+    "pug": "2.0.0-beta3",
     "react": "15.1.0",
     "react-dom": "15.1.0",
     "react-routing": "0.0.7",
