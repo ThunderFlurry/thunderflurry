@@ -12,6 +12,7 @@ We use Slack for communications. Your input on this project is extremely valuabl
 
 [![Slack Invites](https://img.shields.io/badge/%23Slack-Collaborate%20With%20Us-blue.svg)](https://thunderflurry.signup.team/)
 [![Join the chat at https://gitter.im/ThunderFlurry/thunderflurry](https://badges.gitter.im/ThunderFlurry/thunderflurry.svg)](https://gitter.im/ThunderFlurry/thunderflurry?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![first-timers-only](http://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](http://www.firsttimersonly.com/)
 
 ### Browser Support
 
