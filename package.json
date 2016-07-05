@@ -71,7 +71,7 @@
     "react": "15.2.0",
     "react-dom": "15.2.0",
     "react-routing": "0.0.7",
-    "source-map-support": "0.4.0",
+    "source-map-support": "0.4.1",
     "universal-router": "1.2.2",
     "vhost": "^3.0.2",
     "whatwg-fetch": "1.0.0"
