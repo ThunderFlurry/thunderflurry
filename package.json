@@ -59,7 +59,7 @@
     "history": "3.0.0",
     "isomorphic-style-loader": "1.0.0",
     "jade": "1.11.0",
-    "jsonwebtoken": "7.0.1",
+    "jsonwebtoken": "7.1.1",
     "markdown-it": "7.0.0",
     "node-fetch": "1.5.3",
     "normalize.css": "4.2.0",
