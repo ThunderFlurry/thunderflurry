@@ -121,7 +121,7 @@
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.9",
     "replace": "^0.3.0",
-    "stylelint": "^6.7.1",
+    "stylelint": "^7.0.1",
     "stylelint-config-standard": "^11.0.0",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
