@@ -69,7 +69,7 @@
     "pretty-error": "2.0.0",
     "pug": "2.0.0-beta3",
     "react": "15.2.1",
-    "react-dom": "15.2.1",
+    "react-dom": "15.3.0",
     "react-routing": "0.0.7",
     "source-map-support": "0.4.2",
     "universal-router": "1.2.2",
