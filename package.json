@@ -56,7 +56,7 @@
     "front-matter": "2.1.0",
     "graphiql": "0.7.3",
     "graphql": "0.6.1",
-    "history": "3.0.0",
+    "history": "4.0.0",
     "isomorphic-style-loader": "1.0.0",
     "jade": "1.11.0",
     "jsonwebtoken": "7.1.9",
