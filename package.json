@@ -105,7 +105,7 @@
     "git-repository": "^0.1.4",
     "glob": "^7.0.5",
     "jade-loader": "^0.8.0",
-    "jest-cli": "^15.1.1",
+    "jest-cli": "^16.0.1",
     "jscs": "^3.0.5",
     "json-loader": "^0.5.4",
     "mkdirp": "^0.5.1",
