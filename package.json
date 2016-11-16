@@ -90,7 +90,7 @@
     "babel-preset-node6": "^11.0.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.18.1",
     "css-loader": "^0.25.0",
     "del": "^2.2.1",
     "enzyme": "^2.3.0",
