@@ -111,7 +111,7 @@
     "mkdirp": "^0.5.1",
     "ncp": "^2.0.0",
     "postcss": "^5.0.21",
-    "postcss-import": "^8.1.2",
+    "postcss-import": "^9.0.0",
     "postcss-loader": "^0.13.0",
     "postcss-scss": "^0.3.0",
     "precss": "^1.4.0",
