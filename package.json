@@ -112,7 +112,7 @@
     "ncp": "^2.0.0",
     "postcss": "^5.0.21",
     "postcss-import": "^8.1.2",
-    "postcss-loader": "^0.13.0",
+    "postcss-loader": "^1.2.2",
     "postcss-scss": "^0.3.0",
     "precss": "^1.4.0",
     "raw-loader": "^0.5.1",
