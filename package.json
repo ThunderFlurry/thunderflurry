@@ -46,7 +46,7 @@
     "connect": "^3.4.1",
     "cookie-parser": "1.4.3",
     "core-js": "^2.4.0",
-    "eventemitter3": "2.0.0",
+    "eventemitter3": "2.0.2",
     "express": "4.14.0",
     "express-graphql": "0.5.4",
     "express-jwt": "5.0.0",
