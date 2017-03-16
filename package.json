@@ -74,7 +74,7 @@
     "source-map-support": "0.4.2",
     "universal-router": "1.2.2",
     "vhost": "^3.0.2",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "2.0.2"
   },
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",
