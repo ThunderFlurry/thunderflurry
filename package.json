@@ -34,8 +34,8 @@
   "license": "Apache-2.0",
   "licenseUrl": "https://github.com/thunderflurry/thunderflurry/blob/master/LICENSE.md",
   "engines": {
-    "node": ">=4.3 <6",
-    "npm": ">=3.3 <4"
+    "node": ">=6.9 <7",
+    "npm": ">=3.10.8 <4"
   },
   "dependencies": {
     "babel-polyfill": "6.23.0",
