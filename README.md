@@ -30,13 +30,13 @@ We support most browsers, which is the point of using our module in the first pl
 
 #### Required Tools
 - Node
-    - Development requires Node 5.0+
-    - Building is tested with Node 5.8 on Windows, Mac OS, and Ubuntu
-    - Compiled Server requires Node 4.2+ or 5.0+
+    - Development requires Node 6.9+
+    - Building is tested with Node 6.9 on Windows, Mac OS, and Ubuntu
+    - Compiled Server requires Node 6.9+
     - Compiled Server is tested with:
-        - Node 4.4/5.8 on Windows, Mac OS, Ubuntu
-        - Node 4.2 on Amazon EBS with a EC2 micro installation
-- NPM (prefer 2+)
+        - Node 6.9 on Windows, Mac OS, Ubuntu
+        - Node 6.9 on Amazon EBS with a EC2 micro installation
+- NPM (prefer 3.10.8+)
 - Grunt
 
 This list is currently in flux as the foundation is released.
