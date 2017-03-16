@@ -7,7 +7,7 @@ environment:
     # node revisited
     #- nodejs_version: "4.4"
     # post io.js
-    - nodejs_version: "5.8"
+    - nodejs_version: "6.9"
 
 # Install scripts. (runs after repo cloning)
 install:
