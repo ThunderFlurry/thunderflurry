@@ -1,6 +1,8 @@
 
 # [ThunderFlurry](http://github.com/thunderflurry/thunderflurry) ![Github version](https://img.shields.io/github/release/thunderflurry/thunderflurry.svg?label=Current%20Version)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ThunderFlurry/thunderflurry.svg)](https://greenkeeper.io/)
+
 [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YSQJ6ULDHJFXG "Donate once-off to this project using Paypal")
  [![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://www.coinbase.com/checkouts/81a12ff3dc09c93289315684c9e80825 "Donate once-off to this project using BitCoin")
 
