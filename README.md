@@ -1,8 +1,6 @@
 
 # [ThunderFlurry](http://github.com/thunderflurry/thunderflurry) ![Github version](https://img.shields.io/github/release/thunderflurry/thunderflurry.svg?label=Current%20Version)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ThunderFlurry/thunderflurry.svg)](https://greenkeeper.io/)
-
 [![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YSQJ6ULDHJFXG "Donate once-off to this project using Paypal")
  [![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://www.coinbase.com/checkouts/81a12ff3dc09c93289315684c9e80825 "Donate once-off to this project using BitCoin")
 
@@ -32,13 +30,13 @@ We support most browsers, which is the point of using our module in the first pl
 
 #### Required Tools
 - Node
-    - Development requires Node 5.0+
-    - Building is tested with Node 5.8 on Windows, Mac OS, and Ubuntu
-    - Compiled Server requires Node 4.2+ or 5.0+
+    - Development requires Node 6.9+
+    - Building is tested with Node 6.9 on Windows, Mac OS, and Ubuntu
+    - Compiled Server requires Node 6.9+
     - Compiled Server is tested with:
-        - Node 4.4/5.8 on Windows, Mac OS, Ubuntu
-        - Node 4.2 on Amazon EBS with a EC2 micro installation
-- NPM (prefer 2+)
+        - Node 6.9 on Windows, Mac OS, Ubuntu
+        - Node 6.9 on Amazon EBS with a EC2 micro installation
+- NPM (prefer 3.10.8+)
 - Grunt
 
 This list is currently in flux as the foundation is released.
